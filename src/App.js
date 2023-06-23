@@ -34,9 +34,9 @@ function App() {
       
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand onClick={() => {navigate('/')}}>Samjin_Shop</Navbar.Brand>
+          <Navbar.Brand onClick={() => {navigate('/samjin')}}>Samjin_Shop</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link onClick={() => {navigate('/')}} >Home</Nav.Link>
+            <Nav.Link onClick={() => {navigate('/samjin')}} >Home</Nav.Link>
             <Nav.Link onClick={() => {navigate('/about')}}>About</Nav.Link>
             <Nav.Link onClick={() => {navigate('/about/info')}}>Information</Nav.Link>
             <Nav.Link onClick={() => {navigate('/cart')}}>Cart</Nav.Link>
@@ -45,7 +45,7 @@ function App() {
       </Navbar>
 
       <Routes>
-        <Route path='/' element={
+        <Route path='/samjin' element={
           <Container>
             <img src={process.env.PUBLIC_URL + '/images/visual_main_01.jpg'} alt="vm"/>
             <h2>Best 상품</h2>
